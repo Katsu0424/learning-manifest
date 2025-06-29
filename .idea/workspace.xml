@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c77d5d85-6d06-4dda-b0c0-4302fe6a15fe" name="変更" comment="add redis">
-      <change afterPath="$PROJECT_DIR$/base/learning-product-service/deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/learning-product-service/kustomization.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/learning-product-service/service.yaml" afterDir="false" />
+    <list default="true" id="c77d5d85-6d06-4dda-b0c0-4302fe6a15fe" name="変更" comment="add learning-product-service">
+      <change afterPath="$PROJECT_DIR$/base/redis/kustomization.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/overlays/dev/kustomization.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/overlays/dev/kustomization.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +49,22 @@
       <option name="project" value="LOCAL" />
       <updated>1751187866377</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add learning-product-service">
+      <option name="closed" value="true" />
+      <created>1751208154887</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1751208154887</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add app-of-apps.yaml" />
     <MESSAGE value="add mysql" />
     <MESSAGE value="add redis" />
-    <option name="LAST_COMMIT_MESSAGE" value="add redis" />
+    <MESSAGE value="add learning-product-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add learning-product-service" />
   </component>
 </project>
