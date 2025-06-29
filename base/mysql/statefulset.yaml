@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mysql
+spec:
+  serviceName: "mysql"
+  replicas: 1 # まずは1つで、後で読み込み専用/書き込み専用で分ける
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      labels:
+        app: mysql
+    spec:
+      containers:
+        - name: mysql
+          image: mysql:8.0 # 公式イメージ
+          ports:
+            - containerPort: 3306
+          env:
+            # secret.yamlで定義したパスワードを環境変数として注入する
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: ROOT_PASSWORD
+          volumeMounts:
+            # データ保存用の永続ボリュームをマウントする
+            - name: mysql-persistent-storage
+              mountPath: /var/lib/mysql
+  # Podごとに永続ボリュームを自動で作成するためのテンプレート
+  volumeClaimTemplates:
+    - metadata:
+        name: mysql-persistent-storage
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 1Gi # 開発用なので1GBで十分

@@ -1,18 +1,22 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: root-app
+  name: mysql
   namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
   source:
     repoURL: https://github.com/Katsu0424/learning-manifest
     targetRevision: HEAD
-    path: overlays/dev # 開発環境のディレクトリを監視対象とする
+    path: overlays/dev # このApplicationはdev環境のマニフェスト全体を指す
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: default # MySQLをデプロイする名前空間
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

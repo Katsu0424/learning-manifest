@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c77d5d85-6d06-4dda-b0c0-4302fe6a15fe" name="変更" comment="add app-of-apps.yaml">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/mysql/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/mysql/secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/mysql/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/mysql/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/overlays/dev/kustomization.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/overlays/dev/mysql-app.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/overlays/dev/mysql-storage-patch.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/app-of-apps.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app-of-apps.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "main"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="add app-of-apps.yaml">
+      <option name="closed" value="true" />
+      <created>1751184677634</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751184677634</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add app-of-apps.yaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add app-of-apps.yaml" />
+  </component>
+</project>
