@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: learning-product-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: learning-product-service
+  template:
+    metadata:
+      labels:
+        app: learning-product-service
+    spec:
+      containers:
+        - name: learning-product-service
+          image: katsu0424/learning-product-service:latest
+          ports:
+            - containerPort: 8080
+          env:
+            # application.yaml`MYSQL_ROOT_PASSWORD`を
+            # `mysql-secret`から取得して環境変数としてセット。
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-secret
+                  key: ROOT_PASSWORD
