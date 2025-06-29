@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: mysql
+  name: dev-apps
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -13,7 +13,7 @@ spec:
     path: overlays/dev # このApplicationはdev環境のマニフェスト全体を指す
   destination:
     server: https://kubernetes.default.svc
-    namespace: default # MySQLをデプロイする名前空間
+    namespace: default # 開発なのでdefault namespaceを使用
   syncPolicy:
     automated:
       prune: true
