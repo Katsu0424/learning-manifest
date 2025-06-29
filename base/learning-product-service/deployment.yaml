@@ -12,6 +12,8 @@ spec:
       labels:
         app: learning-product-service
     spec:
+      imagePullSecrets:
+        - name: regcred
       containers:
         - name: learning-product-service
           image: katsu0424/learning-product-service:latest
