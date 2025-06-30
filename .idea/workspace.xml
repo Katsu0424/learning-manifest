@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c77d5d85-6d06-4dda-b0c0-4302fe6a15fe" name="変更" comment="add Kustomization">
+    <list default="true" id="c77d5d85-6d06-4dda-b0c0-4302fe6a15fe" name="変更" comment="add secret">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/learning-product-service/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/base/learning-product-service/deployment.yaml" afterDir="false" />
     </list>
@@ -65,7 +65,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751208917926</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add secret">
+      <option name="closed" value="true" />
+      <created>1751209273753</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1751209273753</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -74,6 +82,7 @@
     <MESSAGE value="add redis" />
     <MESSAGE value="add learning-product-service" />
     <MESSAGE value="add Kustomization" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Kustomization" />
+    <MESSAGE value="add secret" />
+    <option name="LAST_COMMIT_MESSAGE" value="add secret" />
   </component>
 </project>

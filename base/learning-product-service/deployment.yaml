@@ -16,7 +16,7 @@ spec:
         - name: regcred
       containers:
         - name: learning-product-service
-          image: katsu0424/learning-product-service:latest
+          image: katsu424/learning-product-service:latest
           ports:
             - containerPort: 8080
           env:
