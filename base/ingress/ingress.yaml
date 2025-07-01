@@ -13,6 +13,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: api-gateway
+                name: learning-api-gateway
                 port:
                   number: 80
