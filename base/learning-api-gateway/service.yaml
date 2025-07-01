@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: learning-api-gateway
+spec:
+  selector:
+    app: learning-api-gateway
+  ports:
+    - protocol: TCP
+      # Serviceはクラスタ内で標準的なポート80で公開
+      port: 80
+      # コンテナ内の8080番ポートに転送
+      targetPort: 8080
+  # Ingress Controller経由でアクセスするため、`type: NodePort`によるクラスター外部からの経路確保は不要。
+  # デフォルトの`ClusterIP`タイプとなり、クラスタ内部でのみアクセスできる。

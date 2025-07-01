@@ -4,6 +4,7 @@ resources:
   - ../../base/mysql
   - ../../base/redis
   - ../../base/learning-product-service
+  - ../../base/ingress
 
 patches:
   - target:

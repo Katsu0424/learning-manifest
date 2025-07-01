@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: learning-api-gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: learning-api-gateway
+  template:
+    metadata:
+      labels:
+        app: learning-api-gateway
+    spec:
+      containers:
+        - name: learning-api-gateway
+          image: katsu424/learning-api-gateway:latest
+          ports:
+            - containerPort: 8080
