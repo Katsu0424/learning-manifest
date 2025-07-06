@@ -13,12 +13,11 @@ spec:
   rules:
     - http:
        # "/api/v1/products/..." へのリクエストを対象とする
-       - path: /api/v[0-9]+/products
-         pathType: ImplementationSpecific
-         backend:
-           service:
-             # 転送先をlearning-product-serviceに直接指定
-             name: learning-product-service
-             port:
-               # learning-product-serviceが待ち受けているポート
-               number: 8080
+      paths:
+        - path: /api/v[0-9]+/products
+          pathType: ImplementationSpecific
+          backend:
+            service:
+              name: product-service
+              port:
+                number: 8080
