@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c77d5d85-6d06-4dda-b0c0-4302fe6a15fe" name="変更" comment="fix image name">
+    <list default="true" id="c77d5d85-6d06-4dda-b0c0-4302fe6a15fe" name="変更" comment="fix kustomization">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/learning-product-service/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/base/learning-product-service/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/learning-product-service/service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/base/learning-product-service/service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/ingress/ingress.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/base/ingress/ingress.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/learning-api-gateway/deployment.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/learning-api-gateway/kustomization.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/learning-api-gateway/service.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/overlays/dev/kustomization.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/overlays/dev/kustomization.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,14 +21,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2zUwKNnd4qdmo4w3cnS0Gji7GUy" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
   }
 }]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="アプリケーションレベル" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="add app-of-apps.yaml">
       <option name="closed" value="true" />
@@ -82,7 +97,30 @@
       <option name="project" value="LOCAL" />
       <updated>1751282856010</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task active="true" id="Default" summary="デフォルトタスク">
+      <changelist id="c77d5d85-6d06-4dda-b0c0-4302fe6a15fe" name="変更" comment="fix image name" />
+      <created>1751798895756</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751798895756</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add kustomization">
+      <option name="closed" value="true" />
+      <created>1751799968385</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1751799968385</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix kustomization">
+      <option name="closed" value="true" />
+      <created>1751800003823</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1751800003823</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -93,6 +131,8 @@
     <MESSAGE value="add Kustomization" />
     <MESSAGE value="add secret" />
     <MESSAGE value="fix image name" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix image name" />
+    <MESSAGE value="add kustomization" />
+    <MESSAGE value="fix kustomization" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix kustomization" />
   </component>
 </project>

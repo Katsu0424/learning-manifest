@@ -4,15 +4,21 @@ metadata:
   name: ingress
   annotations:
     kubernetes.io/ingress.class: "nginx"
+    # nginx.ingress.kubernetes.io/rewrite-target: /$2
+    # を使うことでパスを書き換えることができる
+    # 例えば、"/api/v1/products/123" へのリクエストを "/123" に書き換えてbackendに転送するイメージ
+    # 今回の場合はbackendで/api/v1/products/...を期待しているので設定不要
+    nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
   rules:
     - http:
-        paths:
-          # 将来、ここに/adminなどのパスを追加していく
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: learning-api-gateway
-                port:
-                  number: 80
+       # "/api/v1/products/..." へのリクエストを対象とする
+       - path: /api/v[0-9]+/products
+         pathType: ImplementationSpecific
+         backend:
+           service:
+             # 転送先をlearning-product-serviceに直接指定
+             name: learning-product-service
+             port:
+               # learning-product-serviceが待ち受けているポート
+               number: 8080
